@@ -21,7 +21,7 @@ export default function SignInPage() {
   return (
     <div className={styles.container}>
       <div className={styles.card}>
-        <h1 className={styles.title}>Join Orbea</h1>
+        <h1 className={styles.title}>Join Maverick</h1>
 
         <p className={styles.description}>
           Enter your email address to log in or create your account.
