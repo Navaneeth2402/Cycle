@@ -1,0 +1,189 @@
+.page {
+  max-width: 1600px;
+  margin: 110px auto 40px;
+  padding: 0 30px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.page h1 {
+  grid-column: 1 / -1;
+
+  text-align: center;
+  font-size: 38px;
+  color: #111;
+
+  margin-bottom: 10px;
+}
+
+.empty {
+  grid-column: 1 / -1;
+
+  text-align: center;
+  font-size: 18px;
+  color: #777;
+}
+
+.wishlistSection {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  gap: 20px;
+
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 16px;
+
+  padding: 20px;
+
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 10px 25px
+    rgba(0, 0, 0, 0.08);
+}
+
+.card img {
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+}
+
+.info {
+  flex: 1;
+}
+
+.info h3 {
+  font-size: 22px;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.info p {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+}
+
+.cartBtn {
+  padding: 12px 20px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #111;
+  color: white;
+
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.cartBtn:hover {
+  background: #333;
+}
+
+.removeBtn {
+  padding: 12px 20px;
+
+  border: 1px solid #ddd;
+  border-radius: 8px;
+
+  background: white;
+  color: #111;
+
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.removeBtn:hover {
+  background: #f5f5f5;
+}
+
+.summary {
+  position: sticky;
+  top: 120px;
+
+  height: fit-content;
+
+  background: white;
+  border: 1px solid #e5e5e5;
+  border-radius: 16px;
+
+  padding: 30px;
+
+  box-shadow: 0 8px 20px
+    rgba(0, 0, 0, 0.05);
+}
+
+.summary h2 {
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* .summaryBtn {
+  
+  padding: 15px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #111;
+  color: white;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+} */
+
+.summaryBtn:hover {
+  background: #333;
+}
+
+@media (max-width: 992px) {
+  .page {
+    grid-template-columns: 1fr;
+  }
+
+  .summary {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card img {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto;
+  }
+
+  .actions {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

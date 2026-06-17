@@ -1,0 +1,751 @@
+.hero{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* VIDEO */
+
+.hero-video{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* CENTER CONTENT */
+
+.hero-content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.hero-subtitle{
+  letter-spacing: 3px;
+  font-size: 11px;
+}
+
+.hero-title{
+  font-size: 40px;
+  font-weight: 700;
+  margin: 10px 0 40px;
+}
+
+/* BUTTONS */
+
+.hero-buttons{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.btn{
+  padding: 16px 50px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn.light{
+  background: white;
+  color: black;
+}
+
+.btn.dark{
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.btn.dark:hover{
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  /* transform: scale(1.05); */
+}
+
+/* DEALER SECTION */
+
+.dealer-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background: #f3f3f3; */
+  min-height: 90vh;
+  padding: 80px;
+}
+
+.dealer-left {
+  flex: 1;
+}
+
+.dealer-small {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: gray;
+  margin-bottom: 30px;
+}
+
+.dealer-title {
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 1.1;
+  max-width: 500px;
+  margin-bottom: 30px;
+  color: black;
+}
+
+.dealer-btn {
+  width: 230px;
+  height: 58px;
+  border: 1px solid #111;
+  background: transparent;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.dealer-btn:hover {
+  background: #111;
+  color: white;
+}
+
+.dealer-right img {
+  width: 124%;
+  height: 550px;
+  object-fit: cover;
+  
+}
+
+.share-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: white;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .dealer-section {
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .dealer-title {
+    font-size: 35px;
+    max-width: 100%;
+  }
+
+  .dealer-right img {
+    height: 350px;
+    margin-top: 30px;
+  }
+
+  .share-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 15px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.zero-title {
+ padding: 60px 80px;
+}
+
+.zero {
+  
+  position: relative;
+  width: 100%;
+  height: 100vh;
+
+  background: url("https://merida-cdn.m-c-g.net/merida-v2/media-bg-img/countries/en-gb/efloat/0547-copy-2.jpg?p1")
+    center/cover no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Dark overlay */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.zero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+}
+
+.sub-title {
+  font-size: 11px;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.zero-content h1 {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 35px;
+  text-transform: uppercase;
+}
+
+.zero-content button {
+  padding: 18px 42px;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  /* transition: 0.4s ease; */
+}
+
+.zero-content button:hover {
+  background: white;
+  color: black;
+  /* transform: scale(1.05); */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .zero-content h1 {
+    font-size: 34px;
+    padding: 0 20px;
+  }
+
+  .zero-content button {
+    padding: 14px 25px;
+    font-size: 14px;
+  }
+}
+
+.bike-sections {
+  padding: 60px 80px;
+  background: #f4f4f4;
+}
+
+.bike-sections h2 {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+/* 2 columns × 2 rows */
+.bike-grids {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 images in row */
+  grid-template-rows: repeat(2, 550px);  /* exact equal height */
+  gap: 25px;
+}
+
+.bike-cards {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  overflow: hidden;
+  display: block;
+  border-radius: none;
+}
+
+.bike-cards img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* transition: 0.5s ease; */
+}
+
+/* .bike-cards:hover img {
+  transform: scale(1.05);
+} */
+
+.contents {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  color: white;
+}
+
+.contents p {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.contents h3 {
+  font-size: 35px;
+  margin-bottom: 25px;
+}
+
+.contents button {
+  padding: 14px 30px;
+  border: none;
+  border-radius: 30px;
+  background: white;
+  color: black;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contents button:hover {
+  background: black;
+  color: white;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .bike-grids {
+    grid-template-columns: 1fr;
+  }
+
+  .bike-cards {
+    height: 400px;
+  }
+
+  .contents h3 {
+    font-size: 35px;
+  }
+}
+
+.bike-hero-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bike-hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bike-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.bike-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 650px;
+  padding-left: 80px;
+  padding-top: 180px;
+  color: #fff;
+}
+
+.bike-hero-title {
+  font-size: 50px;
+  line-height: 1;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+
+.bike-hero-text {
+  font-size: 18px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 35px;
+}
+
+.bike-hero-actions {
+  display: flex;
+  gap: 20px;
+}
+
+.bike-hero-btn-primary,
+.bike-hero-btn-secondary {
+  padding: 16px 34px;
+  border: 2px solid white;
+  border-radius: 40px;
+  font-size: 15px;
+  cursor: pointer;
+  /* transition: 0.3s ease; */
+}
+
+.bike-hero-btn-primary {
+  background:transparent;
+  color: white;
+}
+
+.bike-hero-btn-primary:hover {
+  background: white;
+  color: black;
+}
+
+.bike-hero-btn-secondary {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  backdrop-filter: blur(8px);
+}
+
+/* .bike-hero-btn-primary:hover,
+.bike-hero-btn-secondary:hover {
+  transform: translateY(-2px);
+} */
+
+.bike-hero-pagination {
+  display: flex;
+  gap: 12px;
+  margin-top: 55px;
+}
+
+.bike-hero-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: gray;
+}
+
+.active-dot {
+  background: white;
+}
+
+@media (max-width: 768px) {
+  .bike-hero-content {
+    padding: 120px 24px;
+  }
+
+  .bike-hero-title {
+    font-size: 48px;
+  }
+
+  .bike-hero-text {
+    font-size: 18px;
+  }
+
+  .bike-hero-actions {
+    flex-direction: column;
+  }
+}
+
+#bike-category {
+  scroll-margin-top: 100px;
+}
+
+.bike-category-wrap {
+  padding: 80px 03%;
+  width: 100%;
+  /* padding: 70px 80px; */
+  background: #fff;
+}
+
+/* TOP HEADING */
+.bike-category-main-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 55px;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+/* GRID */
+.bike-category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* CARD */
+.bike-category-card {
+  position: relative;
+  height: 620px;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+/* IMAGE */
+.bike-category-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+
+/* DARK OVERLAY */
+.bike-category-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.45),
+    rgba(0, 0, 0, 0.08)
+  );
+}
+
+/* CONTENT */
+.bike-category-content {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  padding: 30px;
+}
+
+/* CARD TITLE */
+.bike-category-title {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.05;
+  margin-bottom: 28px;
+}
+
+/* BUTTON */
+.bike-category-btn {
+ background: white;
+  /* backdrop-filter: blur(8px); */
+  color:black;
+  border: 2px solid white;
+  border-radius: 50px;
+  padding: 18px 42px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  
+  transition: all 0.3s ease;
+}
+
+.bike-category-btn:hover {
+  transform: scale(1.10);
+ 
+  /* box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); */
+}
+
+/* TABLET */
+@media (max-width: 1200px) {
+  .bike-category-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bike-category-card {
+    height: 600px;
+  }
+
+  .bike-category-main-title {
+    font-size: 46px;
+  }
+
+  .bike-category-title {
+    font-size: 42px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .bike-category-wrap {
+    padding: 40px 20px;
+  }
+
+  .bike-category-main-title {
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
+
+  .bike-category-card {
+    height: 480px;
+  }
+
+  .bike-category-title {
+    font-size: 30px;
+  }
+
+  .bike-category-btn {
+    font-size: 16px;
+    padding: 14px 28px;
+  }
+}
+.bike-news-wrap {
+  margin-bottom: 110px;
+  width: 100%;
+  padding: 90px 60px;
+  background: #fff;
+}
+
+/* HEADER */
+.bike-news-header {
+  max-width: 700px;
+  margin-bottom: 70px;
+}
+
+.bike-news-main-title {
+  font-size: 30px;
+  font-weight: 600;
+  color: #111;
+  line-height: 1.05;
+  margin-bottom: 20px;
+}
+
+.bike-news-subtitle {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #222;
+  margin-bottom: 28px;
+}
+
+/* CTA */
+.bike-news-cta {
+  border: none;
+  background: #111;
+  color: #fff;
+  padding: 16px 34px;
+  border-radius: 40px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.35s ease;
+}
+
+.bike-news-cta:hover {
+  transform: scale(1.06);
+}
+
+/* GRID */
+.bike-news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* CARD */
+.bike-news-card {
+  position: relative;
+  height: 540px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* IMAGE */
+.bike-news-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.bike-news-card:hover .bike-news-img {
+  transform: scale(1.06);
+}
+
+/* OVERLAY */
+.bike-news-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.55),
+    rgba(0, 0, 0, 0.05)
+  );
+}
+
+/* CONTENT */
+.bike-news-content {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  padding: 34px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bike-news-date {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.bike-news-tag {
+  position: absolute;
+  top: 34px;
+  right: 34px;
+  color: #fff;
+  font-size: 13px;
+  padding: 6px 14px;
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: 20px;
+}
+
+.bike-news-title {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+/* TABLET */
+@media (max-width: 1200px) {
+  .bike-news-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bike-news-card {
+    height: 500px;
+  }
+
+  .bike-news-main-title {
+    font-size: 42px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .bike-news-wrap {
+    padding: 50px 20px;
+  }
+
+  .bike-news-main-title {
+    font-size: 32px;
+  }
+
+  .bike-news-subtitle {
+    font-size: 17px;
+  }
+
+  .bike-news-title {
+    font-size: 28px;
+  }
+
+  .bike-news-card {
+    height: 420px;
+  }
+}
