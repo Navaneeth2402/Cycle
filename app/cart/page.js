@@ -88,7 +88,7 @@ export default function CartPage() {
                   </div>
 
                   <p className={styles.total}>
-                    Total: €
+                    Total: ₹
                     {itemTotal.toFixed(2)}
                   </p>
 
@@ -107,7 +107,7 @@ export default function CartPage() {
 
           <div className={styles.summary}>
             <h2>
-              Grand Total: €
+              Grand Total: ₹
               {grandTotal.toFixed(2)}
             </h2>
           </div>
